@@ -7,10 +7,19 @@ function M.CreateFile()
   vim.loop.fs_open(file, "w", 438, function (err)
     if err then
       error("Error creating file " .. file " with error: " .. err)
+      return
     else
       print("Successully created file " .. file)
     end
   end)
+
+  local open_file = vim.fn.input("Want to open the file? ")
+  if open_file == "yes" then
+    vim.api.nvim_command("edit " .. file)
+  else
+    print("See you next time...")
+  end
+
 end
 
 function M.DeleteFile()
@@ -45,11 +54,11 @@ function M.DeleteDir()
   local dir = vim.fn.input("Dir name: ")
 
   vim.loop.fs_rmdir(dir, function (err)
-   if err then
+    if err then
       error("Error deleting directory " .. dir .. "with error: " .. err )
     else
       print("Successully deleted directory " .. dir)
-   end
+    end
   end)
 
 end
