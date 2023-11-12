@@ -31,7 +31,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim)
     'aikooo7/funnyfiles.nvim',
     }
 
--- plugins/telescope.lua:
+-- plugins/funnyfiles.lua:
 return {
     'aikooo7/funnyfiles.nvim'
     }
