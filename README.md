@@ -2,6 +2,8 @@
 
 This plugin is a way of creating/deleting files/folders without needing to open a file explorer.
 
+[![Preview](https://asciinema.org/a/sT2K9pqvwKLKP35o3NB01IR3I.svg)](https://asciinema.org/a/sT2K9pqvwKLKP35o3NB01IR3I)
+
 # How to get started 
 
 Using [vim-plug](https://github.com/junegunn/vim-plug)
