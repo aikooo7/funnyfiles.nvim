@@ -40,10 +40,23 @@ function M.CreateDir()
 
 end
 
+
+function M.DeleteDir()
+  local dir = vim.fn.input("Dir name: ")
+
+  vim.loop.fs_rmdir(dir, function (err)
+   if err then
+      error("Error deleting directory " .. dir .. "with error: " .. err )
+    else
+      print("Successully deleted directory " .. dir)
+   end
+  end)
+
 end
 
 vim.api.nvim_create_user_command("CreateFile", M.CreateFile, {})
 vim.api.nvim_create_user_command("DeleteFile", M.DeleteFile, {})
 vim.api.nvim_create_user_command("CreateDir", M.CreateDir, {})
+vim.api.nvim_create_user_command("DeleteDir", M.DeleteDir, {})
 
 return M
