@@ -2,7 +2,7 @@
 
 This plugin is a way of creating/deleting files/folders without needing to open a file explorer.
 
-[![Preview](https://asciinema.org/a/sT2K9pqvwKLKP35o3NB01IR3I.svg)](https://asciinema.org/a/sT2K9pqvwKLKP35o3NB01IR3I)
+[![plugin demonstration](https://asciinema.org/a/rbImOLDU99MBzRWVPPO3Fy8fr.svg)](https://asciinema.org/a/rbImOLDU99MBzRWVPPO3Fy8fr)
 
 # How to get started 
 
