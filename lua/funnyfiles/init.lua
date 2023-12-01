@@ -9,7 +9,7 @@ function M.CreateFile()
       error("Error creating file " .. file " with error: " .. err)
       return
     else
-      print("Successully created file " .. file)
+      print("Successfully created file " .. file)
     end
   end)
 
@@ -29,7 +29,7 @@ function M.DeleteFile()
     if err then
       error("Error deleting file " .. file .. " with error: " .. err)
     else
-      print("Successully deleted file " .. file)
+      print("Successfully deleted file " .. file)
     end
   end)
 
@@ -42,7 +42,7 @@ function M.CreateDir()
     if err then
       error("Error creating directory " .. dir .. "with error: " .. err )
     else
-      print("Successully created directory " .. dir)
+      print("Successfully created directory " .. dir)
     end
 
   end)
@@ -57,7 +57,7 @@ function M.DeleteDir()
     if err then
       error("Error deleting directory " .. dir .. "with error: " .. err )
     else
-      print("Successully deleted directory " .. dir)
+      print("Successfully deleted directory " .. dir)
     end
   end)
 
