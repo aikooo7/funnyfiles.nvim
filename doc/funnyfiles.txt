@@ -1,0 +1,56 @@
+================================================================================
+INTRODUCTION                                                                *funnyfiles.nvim*
+
+Funnyfiles.nvim is a plugin for creating/deleting files/directories without
+opening a file explorer.
+
+                                                                   *CreateDir*
+Createdir({directory})
+
+  Create a directory with name {directory}. {directory} is of string type and should not exist else
+  a error occurs. (neo)vim process should have permissions to write to the
+  current working directory. 
+
+  Usage: 
+      >
+      CreateDir(test)
+<
+
+                                                                   *CreateFile*
+CreateFile({file})
+
+  Create a file with name {file}. {file} is of string type and should not exist else
+  a error occurs. (neo)vim process should have permissions to write to the
+  current working directory. 
+
+  Usage:
+      >
+      CreateFile(test)
+<
+
+                                                                   *DeleteDirectory*
+DeleteDir({directory})
+
+  Delete a directory with name {directory}. {directory} is of string type and should exist else
+  a error occurs. (neo)vim process should have permissions to write to the
+  current working directory. 
+
+  Usage:
+      >
+      DeleteDirectory(test)
+<
+
+                                                                   *DeleteFile*
+DeleteFile({file})
+
+  Delete a file with name {file} and prompts user to open it. {file} is of string type and should exist else
+  a error occurs. (neo)vim process should have permissions to write to the
+  current working directory and read if user selects to open the file. 
+
+  Usage:
+      >
+      DeleteFile(test)
+<
+
+
+vim:tw=78:ts=8:ft=help:norl:
