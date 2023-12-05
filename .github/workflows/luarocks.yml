@@ -17,3 +17,5 @@ jobs:
         with:
           summary: "This plugin is a way of creating/deleting files/folders without needing to open a file explorer."
           licence: "MIT"
+          labels: |
+            neovim
