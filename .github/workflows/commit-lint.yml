@@ -10,12 +10,10 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install required dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y sudo
-          sudo apt-get install -y git curl
-          curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-          sudo DEBIAN_FRONTEND=noninteractive apt install -y nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: "21"
+
       - name: Print versions
         run: |
           git --version
