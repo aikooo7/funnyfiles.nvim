@@ -3,6 +3,7 @@ local utils = require("funnyfiles.utils")
 local M = {}
 
 function M.CreateFile()
+	---@type string
 	local file = utils.input("File name: ")
 
 	vim.loop.fs_open(file, "w", 438, function(err)
@@ -14,7 +15,9 @@ function M.CreateFile()
 		end
 	end)
 
+	---@type string
 	local open_file = vim.fn.input("Want to open the file? ")
+	---@type string
 	if open_file == "yes" then
 		vim.api.nvim_command("edit " .. file)
 	else
@@ -23,6 +26,7 @@ function M.CreateFile()
 end
 
 function M.DeleteFile()
+	---@type string
 	local file = utils.input("File name: ")
 
 	vim.loop.fs_unlink(file, function(err)
@@ -35,6 +39,7 @@ function M.DeleteFile()
 end
 
 function M.CreateDir()
+	---@type string
 	local dir = utils.input("Dir name: ")
 
 	vim.loop.fs_mkdir(dir, 511, function(err)
@@ -47,6 +52,7 @@ function M.CreateDir()
 end
 
 function M.DeleteDir()
+	---@type string
 	local dir = utils.input("Dir name: ")
 
 	vim.loop.fs_rmdir(dir, function(err)
