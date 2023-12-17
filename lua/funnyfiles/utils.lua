@@ -2,14 +2,14 @@ local M = {}
 
 function M.input(message)
 	repeat
-		local user_input = vim.fn.input(message)
-		if user_input ~= "" then
+		User_input = vim.fn.input(message)
+		if User_input ~= "" then
 			print("Input should not be empty")
 		end
 
-	until user_input ~= ""
+	until User_input ~= ""
 
-	return user_input
+	return User_input
 end
 
 return M
