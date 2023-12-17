@@ -16,6 +16,6 @@ jobs:
           LUAROCKS_API_KEY: ${{ secrets.LUAROCKS_API_KEY }}
         with:
           summary: "This plugin is a way of creating/deleting files/folders without needing to open a file explorer."
-          licence: "MIT"
+          license: "MIT"
           labels: |
             neovim
